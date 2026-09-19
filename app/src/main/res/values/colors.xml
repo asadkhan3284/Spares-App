@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Mirrors the --accent / --panel palette from the original HTML tool's dark theme -->
+    <!-- Mirrors the accent/panel palette from the original HTML tool's dark theme -->
     <color name="bg">#1B2027</color>
     <color name="panel">#232A33</color>
     <color name="panel2">#2A323D</color>

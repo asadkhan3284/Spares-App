@@ -29,7 +29,7 @@
         </activity>
 
         <!-- MSAL interactive sign-in redirect capture. redirect_uri/signature hash
-             is configured in res/values/msal_strings.xml — see README setup steps. -->
+             is configured in res/values/msal_config_values.xml — see README setup steps. -->
         <activity
             android:name="com.microsoft.identity.client.BrowserTabActivity"
             android:exported="true">
