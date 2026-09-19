@@ -72,8 +72,14 @@ dependencies {
     // Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1")
 
-    // Microsoft Authentication Library (MSAL) — personal + work/school sign-in
-    implementation("com.microsoft.identity.client:msal:4.10.0")
+    // Microsoft Authentication Library (MSAL) — personal + work/school sign-in.
+    // Excludes opentelemetry-bom: this MSAL release's POM lists it as a plain
+    // (non-platform) dependency, which Gradle can't resolve a runtime variant
+    // for — a known packaging bug (AzureAD/microsoft-authentication-library-for-android#1864).
+    // MSAL doesn't need it at runtime; excluding it is the standard workaround.
+    implementation("com.microsoft.identity.client:msal:4.10.0") {
+        exclude(group = "io.opentelemetry", module = "opentelemetry-bom")
+    }
 
     // Networking — Microsoft Graph API
     implementation(platform("com.squareup.okhttp3:okhttp-bom:4.12.0"))
