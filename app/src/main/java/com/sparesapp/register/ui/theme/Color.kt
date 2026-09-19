@@ -1,0 +1,38 @@
+package com.sparesapp.register.ui.theme
+
+import androidx.compose.ui.graphics.Color
+
+// Mirrors the original HTML tool's dark palette (--bg, --panel, --accent, etc.)
+val Bg = Color(0xFF1B2027)
+val Panel = Color(0xFF232A33)
+val Panel2 = Color(0xFF2A323D)
+val Border = Color(0xFF384252)
+val Text = Color(0xFFE7EBEF)
+val TextMuted = Color(0xFF93A0B2)
+val TextFaint = Color(0xFF65707F)
+val Accent = Color(0xFFE3A23A)
+val AccentInk = Color(0xFF2A1D06)
+val Accent2 = Color(0xFF5C93BE)
+val Ok = Color(0xFF4B9C6E)
+val OkBg = Color(0xFF20342A)
+val Warn = Color(0xFFD9822B)
+val WarnBg = Color(0xFF3A2A16)
+val Danger = Color(0xFFC34A3E)
+val DangerBg = Color(0xFF3A1F1C)
+
+// Light theme mirror
+val BgLight = Color(0xFFF1F3F5)
+val PanelLight = Color(0xFFFFFFFF)
+val Panel2Light = Color(0xFFF5F7F9)
+val BorderLight = Color(0xFFD9DFE5)
+val TextLight = Color(0xFF1B2027)
+val TextMutedLight = Color(0xFF5B6673)
+val TextFaintLight = Color(0xFF8994A2)
+val AccentLight = Color(0xFFB8721A)
+val Accent2Light = Color(0xFF2E6690)
+val OkLight = Color(0xFF2F7A50)
+val OkBgLight = Color(0xFFE4F2E9)
+val WarnLight = Color(0xFFB8611E)
+val WarnBgLight = Color(0xFFFBEBDA)
+val DangerLight = Color(0xFFA23327)
+val DangerBgLight = Color(0xFFFAE7E5)

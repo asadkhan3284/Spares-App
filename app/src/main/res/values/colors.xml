@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Mirrors the --accent / --panel palette from the original HTML tool's dark theme -->
+    <color name="bg">#1B2027</color>
+    <color name="panel">#232A33</color>
+    <color name="panel2">#2A323D</color>
+    <color name="border">#384252</color>
+    <color name="text">#E7EBEF</color>
+    <color name="text_muted">#93A0B2</color>
+    <color name="text_faint">#65707F</color>
+    <color name="accent">#E3A23A</color>
+    <color name="accent_ink">#2A1D06</color>
+    <color name="accent2">#5C93BE</color>
+    <color name="ok">#4B9C6E</color>
+    <color name="ok_bg">#20342A</color>
+    <color name="warn">#D9822B</color>
+    <color name="warn_bg">#3A2A16</color>
+    <color name="danger">#C34A3E</color>
+    <color name="danger_bg">#3A1F1C</color>
+</resources>

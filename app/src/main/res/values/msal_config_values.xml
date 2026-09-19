@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      REQUIRED SETUP — see README.md "Azure AD app registration" section.
+
+      1. Register an app at https://entra.microsoft.com (App registrations > New registration),
+         supported account types = "Accounts in any organizational directory and personal
+         Microsoft accounts".
+      2. Generate your app's signature hash:
+           keytool -exportcert -alias <your-key-alias> -keystore <your-keystore> | openssl sha1 -binary | openssl base64
+         (use the debug keystore for local testing: ~/.android/debug.keystore, password "android",
+          alias "androiddebugkey")
+      3. Replace the value below with that hash, URL-safe-encoded if it contains '+', '/', or '='
+         you may need to percent-encode them for the manifest path segment.
+      4. Add an Android platform entry in the Entra app registration with:
+           Package name: com.sparesapp.register
+           Signature hash: <the value from step 2>
+    -->
+    <string name="msal_signature_hash_path" translatable="false">/CHANGE_ME_SIGNATURE_HASH</string>
+</resources>

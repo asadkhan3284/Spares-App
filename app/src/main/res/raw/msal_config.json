@@ -1,0 +1,17 @@
+{
+  "client_id": "CHANGE_ME_APPLICATION_CLIENT_ID",
+  "authorization_user_agent": "DEFAULT",
+  "redirect_uri": "msauth://com.sparesapp.register/CHANGE_ME_SIGNATURE_HASH",
+  "account_mode": "SINGLE",
+  "broker_redirect_uri_registered": false,
+  "authorities": [
+    {
+      "type": "AAD",
+      "audience": {
+        "type": "AzureADandPersonalMicrosoftAccount",
+        "tenant_id": "common"
+      },
+      "default": true
+    }
+  ]
+}
