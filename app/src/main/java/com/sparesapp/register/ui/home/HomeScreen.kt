@@ -21,7 +21,7 @@ import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.SpaceDashboard
 import androidx.compose.material.icons.filled.ViewList
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.ExposedDropdownMenu
+import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.ExposedDropdownMenuBox
 import androidx.compose.material3.ExposedDropdownMenuDefaults
 import androidx.compose.material3.FilterChip
@@ -238,7 +238,7 @@ private fun Dropdown(
             trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expanded) },
             modifier = Modifier.menuAnchor().fillMaxWidth(),
         )
-        ExposedDropdownMenu(expanded = expanded, onDismissRequest = { expanded = false }) {
+        DropdownMenu(expanded = expanded, onDismissRequest = { expanded = false }) {
             androidx.compose.material3.DropdownMenuItem(text = { Text("All") }, onClick = { onSelect(null); expanded = false })
             options.forEach { opt ->
                 androidx.compose.material3.DropdownMenuItem(text = { Text(opt) }, onClick = { onSelect(opt); expanded = false })
@@ -260,7 +260,7 @@ private fun SortDropdown(selected: SortOption, onSelect: (SortOption) -> Unit, m
             trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expanded) },
             modifier = Modifier.menuAnchor().fillMaxWidth(),
         )
-        ExposedDropdownMenu(expanded = expanded, onDismissRequest = { expanded = false }) {
+        DropdownMenu(expanded = expanded, onDismissRequest = { expanded = false }) {
             SortOption.entries.forEach { opt ->
                 androidx.compose.material3.DropdownMenuItem(text = { Text(opt.label) }, onClick = { onSelect(opt); expanded = false })
             }
