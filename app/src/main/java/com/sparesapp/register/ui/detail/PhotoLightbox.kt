@@ -1,6 +1,7 @@
 package com.sparesapp.register.ui.detail
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.gestures.detectTransformGestures
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -83,7 +84,7 @@ private fun ZoomableGraphImage(photoRef: PhotoRef, graphRepository: GraphReposit
                 }
             }
             .pointerInput(photoRef) {
-                androidx.compose.foundation.gestures.detectTapGestures(onDoubleTap = {
+                detectTapGestures(onDoubleTap = {
                     if (scale > 1f) { scale = 1f; offsetX = 0f; offsetY = 0f } else { scale = 2.5f }
                 })
             },
